@@ -1,0 +1,10 @@
+feature,mean_abs_shap
+Original Interest Rate,0.04075872008021118
+Credit Score,0.034595879297641574
+Original Debt-to-Income (DTI) Ratio,0.021788945274935342
+Original Combined Loan-to-Value (CLTV),0.01407932828648212
+Mortgage Insurance Percentage (MI %),0.009078257311383103
+Loan Purpose,0.005782294763330173
+Program Indicator,0.002370286630639302
+Original Loan Term,0.0019235305931565594
+First Time Homebuyer Flag,0.0006200735051864831

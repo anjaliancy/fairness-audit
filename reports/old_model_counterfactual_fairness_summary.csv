@@ -1,0 +1,2 @@
+sensitive_attribute,mean_abs_delta,max_abs_delta,mean_delta,p95_abs_delta
+Credit Score,0.033839400827139966,0.1784454308774871,-0.0089154984198423,0.12105300454438205

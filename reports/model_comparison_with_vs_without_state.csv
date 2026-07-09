@@ -1,0 +1,2 @@
+Model_Type,Model_1_Variables,Model_1_Name,Model_1_Test_AUC,Model_1_Test_Gini,Model_1_Test_KS,Model_2_Variables,Model_2_Name,Model_2_Test_AUC,Model_2_Test_Gini,Model_2_Test_KS,AUC_Difference,Gini_Difference,KS_Difference,AUC_% Change,Gini_% Change,KS_% Change
+Logistic Regression Comparison,12,With State,0.7627,0.5255,0.4025,11,Without State,0.7627,0.5255,0.4025,0.0,0.0,0.0,0.0,0.0,0.0

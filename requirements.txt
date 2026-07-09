@@ -1,0 +1,40 @@
+# ============================================================
+# Mortgage Fairness Audit Pipeline — Python Dependencies
+# ============================================================
+# Install with:
+#   pip install -r requirements.txt
+#
+# TensorFlow note: AdversarialDebiasing requires TF1-compat mode.
+# tensorflow>=2.9 ships with tf.compat.v1 — no separate install needed.
+# If using Apple Silicon, replace tensorflow with tensorflow-macos.
+# ============================================================
+
+# ── Core data / ML ───────────────────────────────────────────
+pandas>=1.5.0
+numpy>=1.23.0
+scikit-learn>=1.2.0
+xgboost>=1.7.0
+imbalanced-learn>=0.10.0
+
+# ── Fairness ─────────────────────────────────────────────────
+aif360>=0.5.0
+fairlearn>=0.8.0
+
+# ── WOE / Scorecard ──────────────────────────────────────────
+optbinning>=0.17.0
+
+# ── Explainability ────────────────────────────────────────────
+shap>=0.41.0
+lime>=0.2.0.1
+anchor-exp>=0.0.2.0
+dice-ml>=0.9
+
+# ── Neural network (for AdversarialDebiasing) ────────────────
+tensorflow>=2.9.0     # uses tf.compat.v1 internally
+
+# ── OpenXAI (fidelity & stability) ───────────────────────────
+openxai>=0.0.1
+
+# ── Visualisation ────────────────────────────────────────────
+matplotlib>=3.6.0
+seaborn>=0.12.0
