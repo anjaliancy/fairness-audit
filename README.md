@@ -1,5 +1,7 @@
 # Fairness Assessment Export
 
+> Extracted and reorganized from a 5-person group project (NUS-ISS, Graduate Certificate in Intelligent Financial Risk Management, April 2026). This repo covers my individually-led workstream: the full fairness and explainability pipeline, disparate impact audit, and logistic regression scorecard. Team members' work on alternative-data acquisition, factor analysis, and the stacked ensemble models is not included here.
+
 This repository packages the fairness, DIR, anchor, explainability, and counterfactual work from the FRM project in a GitHub-friendly layout.
 
 ## Quick Start
@@ -29,15 +31,15 @@ This repository packages the fairness, DIR, anchor, explainability, and counterf
 
 The original notebooks were converted to plain Python files:
 
-- `scripts/fairness_phase1.py`
-- `scripts/fairness_phasev2.py`
-- `scripts/fairness_phasev3.py`
-- `scripts/DIR_Assessment.py`
-- `scripts/XAI_notebook.py`
-- `scripts/XAI_Checks.py`
-- `scripts/Checks.py`
-- `scripts/Classing_and_Model.py`
-- `scripts/Classing_and_Model-new.py`
+- `scripts/fairness_preprocessing.py`
+- `scripts/fairness_inprocessing.py`
+- `scripts/fairness_postprocessing.py`
+- `scripts/dir_audit.py`
+- `scripts/explainability_shap_lime.py`
+- `scripts/explainability_validation.py`
+- `scripts/data_quality_checks.py`
+- `scripts/scorecard_woe_iv.py`
+- `scripts/scorecard_woe_iv_v2.py`
 
 ## Helper Modules
 
