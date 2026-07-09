@@ -1,27 +1,29 @@
 # Fairness Assessment Export
 
-This folder packages the fairness, DIR, anchor, explainability, and counterfactual work from the FRM project in GitHub-friendly form.
+This repository packages the fairness, DIR, anchor, explainability, and counterfactual work from the FRM project in a GitHub-friendly layout.
 
-## Contents
+## Top-Level Layout
 
-- `scripts/` - notebook exports and supporting scripts
+- `scripts/` - notebook exports and supporting Python scripts
 - `src/` - reusable helper modules used by the assessment workflows
-- `reports/` - curated generated outputs, figures, and summary tables
+- `reports/` - curated generated outputs, grouped by topic
 - `requirements.txt` - dependency snapshot from the workspace root
 
-## Included notebook exports
+## Script Exports
 
-- `fairness_phase1.py`
-- `fairness_phasev2.py`
-- `fairness_phasev3.py`
-- `DIR_Assessment.py`
-- `XAI_notebook.py`
-- `XAI_Checks.py`
-- `Checks.py`
-- `Classing_and_Model.py`
-- `Classing_and_Model-new.py`
+The original notebooks were converted to plain Python files:
 
-## Included helper modules
+- `scripts/fairness_phase1.py`
+- `scripts/fairness_phasev2.py`
+- `scripts/fairness_phasev3.py`
+- `scripts/DIR_Assessment.py`
+- `scripts/XAI_notebook.py`
+- `scripts/XAI_Checks.py`
+- `scripts/Checks.py`
+- `scripts/Classing_and_Model.py`
+- `scripts/Classing_and_Model-new.py`
+
+## Helper Modules
 
 - `src/explainability_assessment.py`
 - `src/fairness_preprocessing.py`
@@ -29,12 +31,17 @@ This folder packages the fairness, DIR, anchor, explainability, and counterfactu
 - `src/scorecard_functions.py`
 - `src/woe_iv_functions.py`
 
-## Included report artifacts
+## Reports Layout
 
-The `reports/` folder contains the main explainability, anchor, DIR, and counterfactual outputs that were referenced in the notebooks, including PDFs, PNGs, and summary CSV/TXT files.
+The generated outputs are split by purpose so the repository is easier to browse:
+
+- `reports/anchor/` - anchor explanation PDFs
+- `reports/counterfactual/` - DiCE and counterfactual fairness outputs
+- `reports/explainability/` - explainability dashboards, comparison charts, and summary tables
+- `reports/fairness/` - DIR and fairness diagnostics
 
 ## Notes
 
-- The notebook exports are plain `.py` files generated from the original `.ipynb` sources.
-- Large raw datasets, model binaries, and intermediate build artifacts were intentionally left out to keep the export GitHub-friendly.
-- If you want a different level of pruning, the package can be slimmed down further or expanded to include more of the generated data tables.
+- The exports are plain `.py` files generated from the original `.ipynb` sources.
+- Large raw datasets, model binaries, and intermediate build artifacts were intentionally left out.
+- The repo is ready to upload as-is, and the grouped report folders are meant to make review easier on GitHub.
